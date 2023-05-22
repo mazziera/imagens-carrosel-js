@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagens-carrosel{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+.imagens-carrosel .slide{
+    position: absolute;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.imagens-carrosel .slide.imagem-atual{
+    opacity: 1;
+}
+
+.imagem-rosas{
+    background-image: url(../imagens/flores-rosas.jpg);
+}
+
+.imagem-flores-verdes{
+    background-image: url(../imagens/flores-verdes.jpg);
+}
+
+.imagem-montanhas{
+    background-image: url(../imagens/montanhas.jpg);
+}
+
+.imagem-lago{
+    background-image: url(../imagens/lago.jpg);
+}
+
+.seta-voltar, .seta-avancar{
+    z-index: 1;
+    position: absolute;
+}
+
+.seta-voltar{
+    left: 4%;
+    transform: rotateY(180deg);
+}
+
+.seta-avancar{
+    right: 4%;
+}
+
+.opacidade{
+    opacity: 0.6;
+    cursor: default;
+}
+
+.imagem-seta{
+    width: 50px;
+    height: 50px;
+}
+
+.imagens-carrosel .conteudo{
+    background-color: white;
+    max-width: 600px;
+    margin-left: 180px;
+    padding: 40px 60px;
+}
+
+.conteudo .titulo{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.conteudo .texto{
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.conteudo .botao-link{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.botao-link.rosa{
+    color: hsla(0, 100%, 39%, 1);
+}
+
+.botao-link.verde{
+   color: hsla(61, 87%, 46%, 1);
+}
+
+.botao-link.laranja{
+    color: hsla(14, 75%, 37%, 1);
+}
+
+.botao-link.azul{
+    color: hsla(194, 87%, 46%, 1);
+}
